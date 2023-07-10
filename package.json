@@ -5,10 +5,10 @@
   "type": "module",
   "license": "MIT",
   "typings": "dist/main.d.ts",
-  "main": "dist/index.js",
+  "main": "dist/main.js",
   "homepage": "https://raul-nunez.com",
   "repository": {
-    "url": "https://git@github.com:raulnunez87/sb-components.git",
+    "url": "https://github.com/raulnunez87/sb-components.git",
     "type": "git"
   },
   "peerDependencies": {
