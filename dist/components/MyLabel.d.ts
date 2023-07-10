@@ -1,5 +1,4 @@
 import './mylabel.css';
-
 export interface MyLabelProps {
     /**
      * Is this the principal call to action on the page?
@@ -26,25 +25,4 @@ export interface MyLabelProps {
      */
     backgroundColor?: string;
 }
-export const MyLabel = ({
-    label = 'No Label',
-    size = 'normal',
-    color = 'primary',
-    allCaps = false,
-    fontColor = '',
-    backgroundColor = 'transparent',
-    ...props
-}: MyLabelProps) => {
-    return (
-        <span
-            className={['label', `${ size }`, `text-${color}` ].join(' ')}
-            style={{
-                color: fontColor,
-                backgroundColor: backgroundColor,
-            }}
-            {...props}
-        >
-            { allCaps ? label.toUpperCase() : label }
-        </span>
-    );
-};
+export declare const MyLabel: ({ label, size, color, allCaps, fontColor, backgroundColor, ...props }: MyLabelProps) => import("react/jsx-runtime").JSX.Element;

@@ -1,5 +1,4 @@
 import './button.css';
-
 export interface ButtonProps {
     /**
      * Is this the principal call to action on the page?
@@ -22,26 +21,7 @@ export interface ButtonProps {
      */
     onClick?: () => void;
 }
-
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
-   primary = false,
-   size = 'medium',
-   backgroundColor,
-   label,
-   ...props
-}: ButtonProps) => {
-    const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-    return (
-        <button
-            type="button"
-            className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-            style={{ backgroundColor }}
-            {...props}
-        >
-            {label}
-        </button>
-    );
-};
+export declare const Button: ({ primary, size, backgroundColor, label, ...props }: ButtonProps) => import("react/jsx-runtime").JSX.Element;
